@@ -1,0 +1,11 @@
+Pytest  CLI :
+
+pytest AutomationCases\ -v -s -k test_TC_001_First_TestCase.py
+
+pytest AutomationCases\ -v -s -m " not P1" // to skip tag test case
+
+pytest AutomationCases\ -v -s -m P1  // to run specific tagged test cases
+
+pytest AutomationCases\ -v -s -m "P1 or Regression" // to run multiple tagg same time
+
+pytest .\TestCases\test_EndtoEndTestCaseChaining.py -s -v -m "P0 or Integression or Regression and not Validate"
